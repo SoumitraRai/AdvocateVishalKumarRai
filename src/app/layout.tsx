@@ -138,7 +138,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <div className="w-16 h-16 bg-accent/20 rounded-sm animate-pulse-slow"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <Image
-                    src="/assets/images/logo-light.png"
+                    src="/assets/images/logo-light.jpeg"
                     alt="Vishal Kumar Rai"
                     width={40}
                     height={40}

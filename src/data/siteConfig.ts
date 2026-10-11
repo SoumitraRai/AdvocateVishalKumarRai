@@ -1,8 +1,8 @@
 export const siteConfig = {
   firmName: "Vishal Kumar Rai",
-  shortName: "Dharmikaa Legal",
+  shortName: "Vishal Kumar Rai",
   descriptor: "Independent Legal Counsel",
-  heroEyebrow: "Advocate | Counsel for the Petitioner",
+  heroEyebrow: "Advocate | SUPREME COURT OF INDIA | EST. 2024",
   heroTitle: "Clear legal strategy when the outcome matters.",
   heroDescription:
     "Personalised legal counsel for clients who need careful preparation, decisive advocacy, and a lawyer who stays close to the matter.",

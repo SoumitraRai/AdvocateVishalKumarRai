@@ -1,16 +1,19 @@
 import type { NextConfig } from "next";
 
-// REPLACE "your-repo-name" with your actual GitHub repository name (e.g. "my-portfolio")
-// Leave it as "" if deploying to a root user site (username.github.io)
+// CHANGE THIS to your exact GitHub repository name (e.g. "AdvocateVishalKumarRai" or whatever your repo is named)
+// Leave it as "" if your repo is named username.github.io
 const repoName = "AdvocateVishalKumarRai";
+
+// Only apply basePath and assetPrefix during production builds (GitHub Pages), not during local `npm run dev`
+const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
   // Required for GitHub Pages static deployment[cite: 1]
   output: "export",
 
-  // Fixes missing styles/design by adding your repo prefix to asset paths
-  basePath: repoName ? `/${repoName}` : "",
-  assetPrefix: repoName ? `/${repoName}` : "",
+  // Applies the repo prefix only on production builds, keeping local dev clean
+  basePath: isProd && repoName ? `/${repoName}` : "",
+  assetPrefix: isProd && repoName ? `/${repoName}` : "",
 
   // Ensures standard routing works correctly on static hosting
   trailingSlash: true,

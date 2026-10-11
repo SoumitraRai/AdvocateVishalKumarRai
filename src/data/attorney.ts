@@ -13,8 +13,8 @@ export const attorneyProfile = {
     "3F-11, Vijay Tower, Vikrant Khand, Gomti Nagar, Lucknow, Uttar Pradesh-226010",
   ],
   phoneNumbers: ["+91-9650682586", "+91-9873880107"],
-  email: "advocatevishalrai@gmail.com",
-  image: "/assets/images/image.png",
+  email: "office@vishalkumarrai.in",
+  image: "/assets/images/VishalKumarRai.jpeg",
 } as const;
 
 export type AttorneyProfile = typeof attorneyProfile;
