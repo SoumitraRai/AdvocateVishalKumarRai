@@ -16,7 +16,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="footer-navy-pattern border-t border-white/10 text-white">
+    <footer className="border-t border-white/10 bg-black text-white">
       <div className="container mx-auto px-6 py-16 lg:px-10">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[1.3fr_0.8fr_1fr]">
           <div>
@@ -51,7 +51,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-t border-white/10 bg-[#07182d]/70 py-6"><div className="container mx-auto px-6 text-center text-sm text-white lg:px-10"><p>© {new Date().getFullYear()} <span className="font-semibold text-white">{attorneyProfile.name}</span> · All rights reserved</p></div></div>
+      <div className="border-t border-white/10 bg-black py-6"><div className="container mx-auto px-6 text-center text-sm text-white lg:px-10"><p>© {new Date().getFullYear()} <span className="font-semibold text-white">{attorneyProfile.name}</span> · All rights reserved</p></div></div>
     </footer>
   );
 }

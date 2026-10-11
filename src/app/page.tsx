@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import SoloHero from '@/components/sections/home/SoloHero';
 import AboutAttorney from '@/components/sections/home/AboutAttorney';
-import { TestimonialCarousel } from '@/components/sections/home/TestimonialCarousel';
 import PremiumContactForm from '@/components/ui/PremiumContactForm';
 import { attorneyProfile } from '@/data/attorney';
 import { practiceAreas } from '@/data/siteConfig';
@@ -15,7 +14,7 @@ export default function Home() {
       <section
         id="practice-areas"
         aria-labelledby="practice-areas-title"
-        className="scroll-mt-20 bg-white py-16 md:py-20"
+        className="scroll-mt-20 bg-black py-16 text-white md:py-20"
       >
         <div className="container mx-auto px-6 lg:px-10">
           <div className="mx-auto mb-8 max-w-3xl text-center">
@@ -24,11 +23,11 @@ export default function Home() {
             </p>
             <h2
               id="practice-areas-title"
-              className="mb-4 text-3xl font-bold text-[#0c2444] md:text-4xl"
+              className="mb-4 text-3xl font-bold text-white md:text-4xl"
             >
               Focused counsel, built around your matter.
             </h2>
-            <p className="mx-auto max-w-2xl text-base leading-7 text-slate-600 md:text-lg">
+            <p className="mx-auto max-w-2xl text-base leading-7 text-white/70 md:text-lg">
               A focused practice means your matter receives careful attention from the first
               conversation through the next decisive step.
             </p>
@@ -37,13 +36,13 @@ export default function Home() {
             {practiceAreas.map(area => (
               <details
                 key={area.number}
-                className="group rounded-2xl border border-slate-200 bg-[#f8f5ef] p-5 transition hover:border-[#c9aa6e] hover:shadow-lg sm:p-6"
+                className="group rounded-2xl border border-white/20 bg-black p-5 transition hover:border-[#c9aa6e] hover:shadow-lg sm:p-6"
               >
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 outline-none marker:hidden [&::-webkit-details-marker]:hidden focus-visible:ring-2 focus-visible:ring-[#c9aa6e] focus-visible:ring-offset-2">
                   <span className="flex min-w-0 items-center gap-3">
                     <span className="font-playfair text-xl text-[#c9aa6e]">{area.number}</span>
                     <span className="h-px w-6 shrink-0 bg-[#c9aa6e]/60" />
-                    <span className="text-lg font-semibold leading-tight text-[#0c2444] sm:text-xl">
+                    <span className="text-lg font-semibold leading-tight text-white sm:text-xl">
                       {area.title}
                     </span>
                   </span>
@@ -54,7 +53,7 @@ export default function Home() {
                     +
                   </span>
                 </summary>
-                <p className="mt-4 border-t border-slate-200 pt-4 text-sm leading-6 text-slate-600">
+                <p className="mt-4 border-t border-white/15 pt-4 text-sm leading-6 text-white/70">
                   {area.summary}
                 </p>
               </details>
@@ -63,10 +62,10 @@ export default function Home() {
           <div className="mt-7 text-center">
             <a
               href="#contact"
-              className="practice-cta inline-flex items-center justify-center rounded-lg bg-[#0c2444] px-6 py-3 font-semibold !text-white shadow-md transition hover:-translate-y-0.5 hover:bg-[#173b60]"
+              className="practice-cta group inline-flex items-center justify-center rounded-lg border border-[#c9aa6e] bg-black px-6 py-3 font-semibold !text-[#f5f1e9] shadow-md transition hover:-translate-y-0.5 hover:bg-[#c9aa6e] hover:!text-black"
             >
-              <span className="!text-white">Discuss your matter</span>
-              <span aria-hidden="true" className="ml-2 !text-white">
+              <span className="!text-[#f5f1e9] group-hover:!text-black">Discuss your matter</span>
+              <span aria-hidden="true" className="ml-2 !text-[#c9aa6e] group-hover:!text-black">
                 →
               </span>
             </a>
@@ -74,6 +73,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonials temporarily hidden until the section is ready for release.
       <section
         id="testimonials"
         aria-labelledby="testimonials-title"
@@ -92,6 +92,7 @@ export default function Home() {
           <TestimonialCarousel />
         </div>
       </section>
+      */}
 
       <section
         id="contact"

@@ -41,7 +41,7 @@ export default function SoloHero() {
         <div className="flex flex-col gap-6 border-t border-white/25 pt-5 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-sm text-xs uppercase tracking-[0.16em] text-white/70 sm:text-sm">
             <p className="mb-1 font-semibold text-white">{attorneyProfile.role}</p>
-            <p className="mb-0">New Delhi · Lucknow · India</p>
+            <p className="mb-0">New Delhi · Noida · Lucknow · Patna</p>
           </div>
           <div className="grid grid-cols-2 gap-x-8 gap-y-3 sm:grid-cols-3 sm:gap-x-12">
             <div>

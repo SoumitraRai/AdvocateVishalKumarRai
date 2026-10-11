@@ -11,10 +11,8 @@ export const siteConfig = {
   schedulingUrl: "",
   navigation: [
     { label: "Home", href: "/#home" },
-    { label: "About", href: "/#about" },
+    { label: "Overview", href: "/#about" },
     { label: "Practice Areas", href: "/#practice-areas" },
-    { label: "Testimonials", href: "/#testimonials" },
-    { label: "Contact", href: "/#contact" },
   ],
 } as const;
 

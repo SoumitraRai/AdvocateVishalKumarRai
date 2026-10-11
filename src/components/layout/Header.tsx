@@ -75,13 +75,11 @@ const Header = () => {
             <a
               href="#contact"
               className={cn(
-                'nav-consult-cta rounded-md px-5 py-3 text-sm font-semibold transition hover:bg-[#cf1735] hover:!text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c9aa6e] focus-visible:ring-offset-2',
-                isSticky
-                  ? 'bg-[#0c2444] !text-[#f8f5ef] focus-visible:ring-offset-white'
-                  : 'bg-[#f5f1e9] !text-[#151515] focus-visible:ring-offset-[#10100f]'
+                'nav-consult-cta group rounded-md border border-[#c9aa6e] bg-black px-5 py-3 text-sm font-semibold !text-[#f5f1e9] transition hover:bg-[#c9aa6e] hover:!text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c9aa6e] focus-visible:ring-offset-2',
+                isSticky ? 'focus-visible:ring-offset-white' : 'focus-visible:ring-offset-[#10100f]'
               )}
             >
-              <span className={isSticky ? '!text-white' : '!text-[#151515]'}>Consult now</span>
+              <span className="!text-[#f5f1e9] group-hover:!text-black">Consult now</span>
             </a>
           </nav>
         </div>
