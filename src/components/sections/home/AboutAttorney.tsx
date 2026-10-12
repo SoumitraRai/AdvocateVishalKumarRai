@@ -1,5 +1,3 @@
-import { attorneyProfile } from '@/data/attorney';
-
 export default function AboutAttorney() {
   return (
     <section
@@ -28,7 +26,31 @@ export default function AboutAttorney() {
             </div>
 
             <div className="max-w-5xl">
-              <p className="font-playfair text-lg leading-[1.42] sm:text-xl">{attorneyProfile.bio}</p>
+              <h3 className="mb-2 font-playfair text-3xl font-semibold leading-tight text-[#111111] sm:text-4xl">
+                Advocate Vishal Kumar Rai
+              </h3>
+              <div className="space-y-4 font-playfair text-lg leading-[1.42] sm:text-xl">
+                <p>
+                  Advocate Vishal Kumar Rai is an independent legal counsel with over nine years of
+                  experience in <strong>Civil and Criminal Litigation, Corporate and Commercial Disputes, Corporate Advisory, Employment and Labour Laws, Banking, Finance and Insurance, Arbitration, Regulatory Compliance, and Contractual Risk Management.</strong>
+                </p>
+                <p>
+                  He advises and represents clients across Delhi, Noida, Lucknow, and Patna,
+                  supported by a professional network spanning India. Alongside his independent
+                  practice, he serves as Legal Counsel – Litigation &amp; General Corporate and Legal
+                  Advisor on a retainership basis, advising on commercial and technology contracts,
+                  corporate governance, employment disputes, real estate and construction matters,
+                  arbitration, and recovery proceedings.
+                </p>
+                <p>
+                  His professional experience includes corporate and insolvency disputes, proceedings
+                  before the NCLT and NCLAT, resolution-plan reviews, contract lifecycle management,
+                  legal research, drafting, and case strategy. With a strong foundation in civil and
+                  criminal litigation, he combines rigorous legal analysis and effective courtroom
+                  strategy with commercially focused advice to protect clients&apos; interests, manage
+                  legal risks, and deliver practical solutions.
+                </p>
+              </div>
             </div>
           </div>
 

@@ -3,28 +3,28 @@
 import { useEffect, useState } from "react";
 import { cn } from "@/utils/cn";
 
-const STORAGE_KEY = "ua_legal_disclaimer_accepted";
+const STORAGE_KEY = "ua_legal_disclaimer_accepted_session";
 
 const Disclaimer = () => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const accepted = localStorage.getItem(STORAGE_KEY);
+    const accepted = sessionStorage.getItem(STORAGE_KEY);
     if (!accepted) setOpen(true);
   }, []);
 
   const handleAccept = () => {
-    localStorage.setItem(STORAGE_KEY, "true");
+    sessionStorage.setItem(STORAGE_KEY, "true");
     setOpen(false);
   };
 
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/70 backdrop-blur-md">
+    <div className="fixed inset-0 z-[9999] flex min-h-[100dvh] items-center justify-center overflow-y-auto bg-black/70 p-4 backdrop-blur-md sm:p-6">
       <div
         className={cn(
-          "w-[90%] max-w-xl rounded-xl bg-white/90 backdrop-blur-lg border border-black/20 shadow-2xl px-8 py-10 text-center"
+          "my-auto max-h-[calc(100dvh-2rem)] w-full max-w-xl overflow-y-auto rounded-xl border border-black/20 bg-white/95 px-5 py-7 text-center shadow-2xl backdrop-blur-lg sm:px-8 sm:py-10"
         )}
       >
         {/* Heading */}

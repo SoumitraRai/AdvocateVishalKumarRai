@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import SoloHero from '@/components/sections/home/SoloHero';
 import AboutAttorney from '@/components/sections/home/AboutAttorney';
 import PremiumContactForm from '@/components/ui/PremiumContactForm';
@@ -108,8 +107,7 @@ export default function Home() {
               Tell me what you are facing.
             </h2>
             <p className="mb-8 text-lg leading-8 text-slate-600">
-              Share a few details about your matter and the best way to reach you. Your information
-              will be treated with care.
+              Share a few details about your legal matter and your preferred way to reach you. Your information will be handled with strict confidentiality, subject to applicable law, and protected in accordance with applicable advocate–client privilege and professional confidentiality obligations and our Privacy Policy.
             </p>
             <div className="space-y-4 border-t border-slate-200 pt-6 text-slate-700">
               <p>
@@ -138,12 +136,27 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-            <Link
-              href={`tel:${attorneyProfile.phoneNumbers[0]}`}
-              className="mt-8 inline-flex font-semibold text-[#9a783b]"
-            >
-              Prefer to call? Reach out directly →
-            </Link>
+            <div className="mt-8 border-t border-slate-200 pt-5 text-sm leading-6 text-slate-600">
+              <p>
+                Prefer an immediate response?{' '}
+                <a
+                  href="https://wa.me/919650682586"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-[#9a783b] underline underline-offset-2"
+                >
+                  Chat on WhatsApp
+                </a>{' '}
+                or call directly at{' '}
+                <a href="tel:+919650682586" className="font-semibold text-[#9a783b]">
+                  +91-9650682586
+                </a>{' '}
+                /{' '}
+                <a href="tel:+919873880107" className="font-semibold text-[#9a783b]">
+                  +91-9873880107
+                </a>.
+              </p>
+            </div>
           </div>
           <div className="rounded-2xl bg-white p-6 shadow-xl md:p-8">
             <PremiumContactForm variant="primary" showTitle={false} fullWidth />

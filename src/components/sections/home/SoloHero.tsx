@@ -7,7 +7,7 @@ export default function SoloHero() {
     <section
       id="home"
       aria-labelledby="hero-title"
-      className="relative isolate -mt-16 min-h-screen overflow-hidden bg-[#10100f] text-white sm:-mt-20"
+      className="relative isolate min-h-screen overflow-hidden bg-[#10100f] text-white"
     >
       <Image
         src="/assets/images/heroimage.png"
@@ -15,12 +15,12 @@ export default function SoloHero() {
         fill
         priority
         sizes="100vw"
-        className="-z-20 object-cover object-center"
+        className="-z-20 object-cover object-[68%_center] sm:object-center"
       />
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(8,9,9,0.78)_0%,rgba(8,9,9,0.48)_42%,rgba(8,9,9,0.12)_78%),linear-gradient(0deg,rgba(8,9,9,0.82)_0%,transparent_34%,rgba(8,9,9,0.32)_100%)]" />
       <div className="absolute inset-0 -z-10 bg-[#12110f]/10 mix-blend-multiply" />
 
-      <div className="container relative mx-auto flex min-h-screen flex-col justify-between px-6 pb-6 pt-28 sm:px-10 sm:pb-8 sm:pt-32 lg:px-16">
+      <div className="container relative mx-auto flex min-h-screen flex-col justify-between px-6 pb-6 pt-20 sm:px-10 sm:pb-8 sm:pt-32 lg:px-16">
         <div className="max-w-4xl hero-fade-up">
           <div className="mb-8 flex items-center gap-4 text-[10px] font-semibold uppercase tracking-[0.3em] text-[#cf1735] sm:text-xs">
             <span className="h-px w-8 bg-[#cf1735] sm:w-12" />
