@@ -2,10 +2,9 @@ export const siteConfig = {
   firmName: "Vishal Kumar Rai",
   shortName: "Vishal Kumar Rai",
   descriptor: "Independent Legal Counsel",
-  heroEyebrow: "Advocate | SUPREME COURT OF INDIA | EST. 2024",
-  heroTitle: "Clear legal strategy when the outcome matters.",
-  heroDescription:
-    "Personalised legal counsel for clients who need careful preparation, decisive advocacy, and a lawyer who stays close to the matter.",
+  heroEyebrow: "Independent Legal Counsel | Advocate, Supreme Court of India",
+  heroTitle: "Vishal Kumar Rai",
+  heroDescription: "Focused Counsel | Clear Advice | Steady Advocacy",
   primaryCta: "Request a Consultation",
   phoneCta: "Call +91-9650682586",
   schedulingUrl: "",
@@ -19,22 +18,32 @@ export const siteConfig = {
 export const practiceAreas = [
   {
     number: "01",
-    title: "Civil Litigation",
-    summary: "Measured representation for disputes, claims, and proceedings requiring a prepared advocate.",
+    title: "Corporate Litigation & Commercial Advisory",
+    summary: "Commercial disputes, high-stakes pleadings, recovery claims, business-facing advisory, and comprehensive contract lifecycle management (MSAs, NDAs, SaaS, MoUs).",
   },
   {
     number: "02",
-    title: "Constitutional & Public Law",
-    summary: "Strategic counsel for matters involving public authorities, rights, and administrative action.",
+    title: "Banking, IBC & Insolvency",
+    summary: "Creditor/debtor matters, NCLT/NCLAT proceedings, IBC Sections 7, 9, and 95 petitions, Section 61 appeals, and CIRP resolution-plan reviews.",
   },
   {
     number: "03",
-    title: "Commercial Matters",
-    summary: "Practical advice and representation for agreements, business disputes, and commercial interests.",
+    title: "Employment & Labour Laws",
+    summary: "Workplace documentation, HR policies, POSH compliance and investigation support, disciplinary procedures, and dispute resolution.",
   },
   {
     number: "04",
-    title: "Property & Real Estate",
-    summary: "Diligent support for property disputes, documentation, and rights affecting real assets.",
+    title: "Arbitration & Alternative Dispute Resolution",
+    summary: "Strategic dispute resolution, interim relief applications, appointment of arbitrators, mediation, and settlement support.",
+  },
+  {
+    number: "05",
+    title: "Real Estate & RERA",
+    summary: "Civil and construction disputes, vendor/development contracts, recovery proceedings, and specialized RERA-related matters.",
+  },
+  {
+    number: "06",
+    title: "Regulatory Compliance & Insurance",
+    summary: "Statutory obligation reviews, legal-risk management, policy interpretation, and insurance claim disputes.",
   },
 ] as const;

@@ -160,11 +160,12 @@ export const PremiumContactForm: React.FC<ContactFormProps> = ({
               className={inputClasses}
             >
               <option value="">Select a topic</option>
-              <option value="Corporate Law">Corporate Law</option>
-              <option value="Civil Litigation">Civil Litigation</option>
-              <option value="Intellectual Property">Intellectual Property</option>
-              <option value="Real Estate Law">Real Estate Law</option>
-              <option value="Estate Planning">Estate Planning</option>
+              <option value="Corporate Litigation & Commercial Advisory">Corporate Litigation &amp; Commercial Advisory</option>
+              <option value="Banking, IBC & Insolvency">Banking, IBC &amp; Insolvency</option>
+              <option value="Employment & Labour Laws">Employment &amp; Labour Laws</option>
+              <option value="Arbitration & Alternative Dispute Resolution">Arbitration &amp; Alternative Dispute Resolution</option>
+              <option value="Real Estate & RERA">Real Estate &amp; RERA</option>
+              <option value="Regulatory Compliance & Insurance">Regulatory Compliance &amp; Insurance</option>
               <option value="Other">Other</option>
             </select>
           </div>

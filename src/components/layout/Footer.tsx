@@ -34,6 +34,12 @@ export default function Footer() {
               {attorneyProfile.phoneNumbers.map((phone) => <a key={phone} href={`tel:${phone}`} className="block !text-white transition hover:!text-[#e6d7b6]">{phone}</a>)}
               <a href={`mailto:${attorneyProfile.email}`} className="block !text-white transition hover:!text-[#e6d7b6]">{attorneyProfile.email}</a>
             </div>
+            <div className="mt-6 border-t border-white/15 pt-5 text-sm text-white/80">
+              <p className="mb-2 font-semibold uppercase tracking-[0.14em] text-[#e6d7b6]">Memberships</p>
+              <ul className="space-y-1">
+                {attorneyProfile.memberships.map(membership => <li key={membership}>{membership}</li>)}
+              </ul>
+            </div>
           </div>
           <div>
             <h3 className="mb-5 text-sm font-bold uppercase tracking-wider text-[#e6d7b6]">Explore</h3>

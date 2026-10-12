@@ -13,6 +13,7 @@ import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import BackToTop from '@/components/ui/BackToTop';
+import ScrollProgress from '@/components/ui/ScrollProgress';
 
 /* ---------- Fonts ---------- */
 const roboto = Roboto({
@@ -70,9 +71,9 @@ const merriweather = Merriweather({
 export const metadata: Metadata = {
   title: 'Vishal Kumar Rai | Independent Legal Counsel',
   description:
-    'Advocate Vishal Kumar Rai provides focused legal counsel in New Delhi, Lucknow, and Uttar Pradesh.',
+    'Vishal Kumar Rai is an independent legal counsel and Advocate of the Supreme Court of India serving clients across New Delhi, Noida, Lucknow, and Patna.',
   keywords:
-    'Vishal Kumar Rai, advocate, counsel for the petitioner, New Delhi lawyer, Lucknow lawyer, civil litigation',
+    'Vishal Kumar Rai, independent legal counsel, Supreme Court of India, corporate litigation, insolvency, arbitration, employment law, RERA',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -108,6 +109,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
 
       <body className="font-montserrat text-black bg-white selection:bg-gray-200 selection:text-black">
+        <ScrollProgress />
         {/* Global legal disclaimer */}
         <Disclaimer />
 

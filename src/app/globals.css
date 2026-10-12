@@ -106,24 +106,20 @@ a {
   text-decoration: none;
 }
 
-/* Site palette scrollbar */
-::-webkit-scrollbar {
-  width: 12px;
+/* Replace the browser scrollbar with the fixed top progress indicator. */
+html,
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-::-webkit-scrollbar-track {
-  background: #f6f3ed;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #cf1735;
-  border-radius: 999px;
-  border: 2px solid #f6f3ed;
-  background-clip: padding-box;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #c9aa6e;
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
 }
 
 
@@ -569,6 +565,11 @@ html.standard-colors img {
   font-weight: 500;
   letter-spacing: 0.08em;
   writing-mode: vertical-rl;
+}
+
+.practice-card[open] {
+  height: auto;
+  overflow: visible;
 }
 
 @media (prefers-reduced-motion: reduce) {

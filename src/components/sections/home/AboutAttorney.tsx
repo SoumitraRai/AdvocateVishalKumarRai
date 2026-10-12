@@ -28,21 +28,7 @@ export default function AboutAttorney() {
             </div>
 
             <div className="max-w-5xl">
-              <div className="space-y-3 font-playfair text-lg leading-[1.2] sm:text-xl">
-                <p>
-                  {attorneyProfile.bio} His work is grounded in careful preparation, clear
-                  communication, and representation shaped around the facts of every matter.
-                </p>
-                <p>
-                  His practice engages civil, constitutional, commercial, and property matters for
-                  clients who need a considered legal response and a steady advocate.
-                </p>
-                <p>Professional engagement is guided by a sustained focus on the client&apos;s objectives.</p>
-              </div>
-
-              <blockquote className="mt-6 flex max-w-4xl gap-6 border-l-2 border-[#cf1735] pl-6 font-playfair text-lg font-semibold italic leading-[1.45] text-[#6b6760] sm:text-xl">
-                {attorneyProfile.philosophy}
-              </blockquote>
+              <p className="font-playfair text-lg leading-[1.42] sm:text-xl">{attorneyProfile.bio}</p>
             </div>
           </div>
 

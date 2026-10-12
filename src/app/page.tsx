@@ -32,11 +32,11 @@ export default function Home() {
               conversation through the next decisive step.
             </p>
           </div>
-          <div className="grid gap-3 sm:grid-cols-2 md:gap-5">
+          <div className="grid gap-3 sm:grid-cols-2 md:gap-5 lg:grid-cols-3">
             {practiceAreas.map(area => (
               <details
                 key={area.number}
-                className="group rounded-2xl border border-white/20 bg-black p-5 transition hover:border-[#c9aa6e] hover:shadow-lg sm:p-6"
+                className="practice-card group h-[160px] self-start overflow-hidden rounded-2xl border border-white/20 bg-black p-5 transition hover:border-[#c9aa6e] hover:shadow-lg sm:h-[144px] sm:p-6 lg:h-[136px]"
               >
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 outline-none marker:hidden [&::-webkit-details-marker]:hidden focus-visible:ring-2 focus-visible:ring-[#c9aa6e] focus-visible:ring-offset-2">
                   <span className="flex min-w-0 items-center gap-3">
@@ -126,8 +126,17 @@ export default function Home() {
                 </a>
               </p>
               <p>
-                <strong className="text-[#0c2444]">Locations:</strong> New Delhi and Lucknow
+                <strong className="text-[#0c2444]">Locations:</strong>{' '}
+                {attorneyProfile.serviceAreas.join(' · ')}
               </p>
+              <div>
+                <strong className="text-[#0c2444]">Offices:</strong>
+                <ul className="mt-2 space-y-2">
+                  {attorneyProfile.addresses.map(address => (
+                    <li key={address}>{address}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
             <Link
               href={`tel:${attorneyProfile.phoneNumbers[0]}`}
