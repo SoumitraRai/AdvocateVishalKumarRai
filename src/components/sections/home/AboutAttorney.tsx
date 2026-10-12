@@ -29,26 +29,22 @@ export default function AboutAttorney() {
               <h3 className="mb-2 font-playfair text-3xl font-semibold leading-tight text-[#111111] sm:text-4xl">
                 Advocate Vishal Kumar Rai
               </h3>
-              <div className="space-y-4 font-playfair text-lg leading-[1.42] sm:text-xl">
+              <div className="space-y-4 text-justify font-playfair text-lg leading-[1.42] sm:text-xl">
                 <p>
                   Advocate Vishal Kumar Rai is an independent legal counsel with over nine years of
-                  experience in <strong>Civil and Criminal Litigation, Corporate and Commercial Disputes, Corporate Advisory, Employment and Labour Laws, Banking, Finance and Insurance, Arbitration, Regulatory Compliance, and Contractual Risk Management.</strong>
+                  experience in Civil and Criminal Litigation, Corporate and Commercial Disputes,
+                  Corporate Advisory, Employment and Labour Laws, Banking, Finance and Insurance,
+                  Arbitration, Insolvency &amp; Bankruptcy
                 </p>
                 <p>
-                  He advises and represents clients across Delhi, Noida, Lucknow, and Patna,
-                  supported by a professional network spanning India. Alongside his independent
-                  practice, he serves as Legal Counsel – Litigation &amp; General Corporate and Legal
-                  Advisor on a retainership basis, advising on commercial and technology contracts,
-                  corporate governance, employment disputes, real estate and construction matters,
-                  arbitration, and recovery proceedings.
+                  He advises individuals and businesses across Delhi, Noida, Lucknow, Patna, and
+                  other parts of India, providing litigation support and retainership-based legal
+                  advisory services.
                 </p>
                 <p>
-                  His professional experience includes corporate and insolvency disputes, proceedings
-                  before the NCLT and NCLAT, resolution-plan reviews, contract lifecycle management,
-                  legal research, drafting, and case strategy. With a strong foundation in civil and
-                  criminal litigation, he combines rigorous legal analysis and effective courtroom
-                  strategy with commercially focused advice to protect clients&apos; interests, manage
-                  legal risks, and deliver practical solutions.
+                  Combining strategic legal representation with practical, business-focused advice,
+                  he helps clients protect their rights, manage legal risks, resolve disputes, and
+                  make informed decisions.
                 </p>
               </div>
             </div>
@@ -58,11 +54,16 @@ export default function AboutAttorney() {
             <p className="mb-0 text-[10px] uppercase tracking-[0.28em] text-[#6d6962] sm:text-xs">
               Approach to advocacy
             </p>
-            <p className="mb-0 max-w-5xl font-playfair text-xl font-semibold italic leading-[1.45] text-[#111111] sm:text-2xl">
-              Advocacy is approached as both representation and responsibility. Matters are examined
-              within the broader framework of statutory design, constitutional discipline, and
-              institutional consequence.
-            </p>
+            <blockquote className="mb-0 max-w-5xl border-l-2 border-[#cf1735] pl-5 text-justify font-playfair text-lg font-medium italic leading-[1.5] text-[#111111] sm:text-xl">
+              “
+              Good advocacy relies on thorough preparation, clear legal strategy, and a direct
+              understanding of what my clients need to achieve. I focus on spotting risks early,
+              building evidence-backed arguments, and choosing the right route forward, resolving
+              disputes practically where possible, and advocating decisively in court when necessary.
+              Every matter is handled with precision, integrity, and an unyielding commitment to
+              protecting my client&apos;s position.
+              ”
+            </blockquote>
           </div>
         </div>
       </div>

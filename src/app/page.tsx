@@ -57,17 +57,17 @@ export default function Home() {
                 </p>
               </details>
             ))}
-          </div>
-          <div className="mt-7 text-center">
-            <a
-              href="#contact"
-              className="practice-cta group inline-flex items-center justify-center rounded-lg border border-[#c9aa6e] bg-black px-6 py-3 font-semibold !text-[#f5f1e9] shadow-md transition hover:-translate-y-0.5 hover:bg-[#c9aa6e] hover:!text-black"
-            >
-              <span className="!text-[#f5f1e9] group-hover:!text-black">Discuss your matter</span>
-              <span aria-hidden="true" className="ml-2 !text-[#c9aa6e] group-hover:!text-black">
-                →
-              </span>
-            </a>
+            <div className="flex items-center justify-center sm:col-span-2 lg:col-span-1 lg:col-start-2">
+              <a
+                href="#contact"
+                className="practice-cta group inline-flex items-center justify-center rounded-lg border border-[#c9aa6e] bg-black px-6 py-3 font-semibold !text-[#f5f1e9] shadow-md transition hover:-translate-y-0.5 hover:bg-[#c9aa6e] hover:!text-black"
+              >
+                <span className="!text-[#f5f1e9] group-hover:!text-black">Discuss your matter</span>
+                <span aria-hidden="true" className="ml-2 !text-[#c9aa6e] group-hover:!text-black">
+                  →
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
